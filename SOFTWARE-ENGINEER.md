@@ -13,7 +13,7 @@ Create a menu planning service which allows to manage weekly menu and associated
 #### Tasks
 
 1. Create data models using your selected ORM for weekly menu, recipe, ingredients, review, etc. Make sure these data models are appripriately connected using `FK`, `1:M`, `M:M ` relationships.
-2. Create REST APIs to create, list, read, update, delete data model objects. API should be secured using API tokens (recommended) or JWT tokens. You can also use Google Authentication to obtain JWT token.
+2. Create REST APIs to create, list, read, update, delete data model objects. Bonus if you can secure API using API tokens (recommended) or JWT tokens. You can use Google Authentication to obtain JWT token.
 3. Create unit and E2E tests. For E2E API tests you can use [Postman](https://www.postman.com/) but ensure Postman collection are commited to your repository. For unit tests use a framework acccording to your stack.
 4. Make sure your tests can be run from a single command - create test runner `makefile` or `bash` script to run your tests.
 
