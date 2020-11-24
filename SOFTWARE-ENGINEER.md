@@ -21,6 +21,7 @@ Create a menu planning service which allows to manage weekly menu and associated
 ### Recommended Technology Stack
 Choose the one you are most familiar. 
 
-- Python 3, Flask as web framework, PeeWee as ORM, Docker as Container, PostgreSQL as database, Pytest for unit test, Postman for API test.
-- Go, chi or beego as web framework, sqlx or beego as ORM, Docker as Container, PostgreSQL as database, go testing package, Postman for API test
+- Python 3, Flask as web framework, PeeWee as ORM, Docker as Container, PostgreSQL as a database, Pytest for unit test, Postman for API test
+- Python 3, Flask as web framework, Flask-PyMongo as ORM, Docker as Container, MongoDB as a database, Pytest for unit test, Postman for API test
+- Go, chi or beego as web framework, sqlx or beego as ORM, Docker as Container, PostgreSQL as a database, go testing package, Postman for API test
 
