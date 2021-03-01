@@ -31,8 +31,8 @@ Write end-to-end (E2E) functional tests which emulates the behaviour of **Person
 ### Recommended Technology Stack
 Choose the one you are most familiar. 
 
-- Testcafe
-- Cypress
+- E2E Test (Testcafe or Cypress)
+- CI/CD (Github Actions. Alternatively Circle CI)
 
 ### Recommended Best-Practices
 
