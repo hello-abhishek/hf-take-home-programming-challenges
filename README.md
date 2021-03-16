@@ -19,5 +19,6 @@ Depending on the role your are applying, please take one of the following challe
 - [Graduate Software Engineer](SOFTWARE-ENGINEER.md)
 - [QA Engineer](QA-ENGINEER.md)
 - [Software Engineer (Intern)](SOFTWARE-ENGINEER.md)
+- [Data Engineer (Intern)](DATA-ENGINEER.md)
 
 Candidate should put their test results on a public code repository hosted on Github. Once test is completed please share the Github repository URL to hiring team so they can review your work.
