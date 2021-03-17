@@ -38,7 +38,7 @@ Choose the one you are most familiar.
 
 #### E2E Test
 - Use of Page Models/Objects
-- Use of Helpfer functions
+- Use of Helper functions
 - Test Setup and Teardown
 - Data-Driven Tests
 - Selector Strategy
