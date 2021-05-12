@@ -28,7 +28,7 @@ Choose the one you are most familiar.
 ## Frontend Focused
 
 ### Problem Statement
-Create a menu planning UI which allows to manage weekly menu and associated recipies.
+Create a menu planning single-page application (SPA) which allows to manage weekly menu and associated recipies.
 
 #### Context
 - A [weekly menu](https://www.hellofresh.com.au/plans/) contains a set of [recipies](https://www.hellofresh.com.au/recipes/). Each week different set of recipies are selected. See example [menu for this week](https://www.hellofresh.com.au/plans/).
@@ -37,13 +37,14 @@ Create a menu planning UI which allows to manage weekly menu and associated reci
 
 #### Tasks
 
-1. Create a single-page application which allows an end user 
+1. Create a single-page application (SPA) which allows an end user 
 - create/read/update/delete [recipies](https://www.hellofresh.com.au/recipes/). Render recipies as paginated list, display a selected data points.
 - create/read/update/delete [weekly menu](https://www.hellofresh.com.au/plans/). Render weekly menu as paginated list (typically 52 weeks in a year).
 - assign [recipies](https://www.hellofresh.com.au/recipes/) to weekly [weekly menu](https://www.hellofresh.com.au/plans/)
 2. You can use mock data or APIs, else you create REST/GraphQL endpoints
 3. Write a few unit tests and end-to-end tests for components
 4. Write CI/CD pipeline using Github action and deploy app to Github Pages
+5. Bonus point if you add Google Authentication and protect routes.
 
 ### Recommended Technology Stack
 Choose the one you are most familiar.
