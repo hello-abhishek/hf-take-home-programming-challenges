@@ -25,3 +25,23 @@ Choose the one you are most familiar.
 - Python 3, Flask as web framework, Flask-PyMongo as ORM, Docker as Container, MongoDB as a database, Pytest for unit test, Postman for API test
 - Go, chi or beego as web framework, sqlx or beego as ORM, Docker as Container, PostgreSQL as a database, go testing package, Postman for API test
 
+## Frontend Focused
+
+### Problem Statement
+Create a menu planning UI which allows to manage weekly menu and associated recipies.
+
+#### Context
+- A [weekly menu](https://www.hellofresh.com.au/plans/) contains a set of [recipies](https://www.hellofresh.com.au/recipes/). Each week different set of recipies are selected. See example [menu for this week](https://www.hellofresh.com.au/plans/).
+- A [recipe](https://www.hellofresh.com.au/recipes/beef-veggie-ragu-spaghetti-5fa9c324cb8f8c0b3a183d01) contains ingredients, step-by-step instructions, nutirtional information, classification, and other metadata. See examples recipes here [1](https://www.hellofresh.com.au/recipes/southeast-asian-chicken-coconut-soup-5fa9c26209c8db59115d3f4f), [2](https://www.hellofresh.com.au/recipes/saucy-coconut-chicken-noodles-5f9b3c7198ecf4455b27d94d), [3](https://www.hellofresh.com.au/recipes/dukkah-roasted-sweet-potato-5f9b43847aacaa50f037d858).
+- A customer can review weekly menu as well as recipe by assigning ratings and/or adding comments.
+
+#### Tasks
+
+1. Create a single-page application which allows an end user 
+- create/read/update/delete [recipies](https://www.hellofresh.com.au/recipes/). Render recipies as paginated list, display a selected data points.
+- create/read/update/delete [weekly menu](https://www.hellofresh.com.au/plans/). Render weekly menu as paginated list (typically 52 weeks in a year).
+- assign [recipies](https://www.hellofresh.com.au/recipes/) to weekly [weekly menu](https://www.hellofresh.com.au/plans/)
+2. You can use mock data or create REST/GraphQL endpoints
+3. Write unit tests and end-to-end tests for components
+4. Write CI/CD pipeline using Github action and deploy to Github Pages
+
