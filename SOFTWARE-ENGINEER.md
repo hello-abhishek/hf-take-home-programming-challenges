@@ -41,7 +41,13 @@ Create a menu planning UI which allows to manage weekly menu and associated reci
 - create/read/update/delete [recipies](https://www.hellofresh.com.au/recipes/). Render recipies as paginated list, display a selected data points.
 - create/read/update/delete [weekly menu](https://www.hellofresh.com.au/plans/). Render weekly menu as paginated list (typically 52 weeks in a year).
 - assign [recipies](https://www.hellofresh.com.au/recipes/) to weekly [weekly menu](https://www.hellofresh.com.au/plans/)
-2. You can use mock data or create REST/GraphQL endpoints
-3. Write unit tests and end-to-end tests for components
-4. Write CI/CD pipeline using Github action and deploy to Github Pages
+2. You can use mock data or APIs, else you create REST/GraphQL endpoints
+3. Write a few unit tests and end-to-end tests for components
+4. Write CI/CD pipeline using Github action and deploy app to Github Pages
+
+### Recommended Technology Stack
+Choose the one you are most familiar.
+
+- JavaScript/TypeScript, Vue.js
+- JavaScript/TypeScript, React
 
