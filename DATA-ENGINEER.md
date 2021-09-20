@@ -7,7 +7,7 @@ Create a [Airflow](https://airflow.apache.org/) pipeline which runs once a week.
 
 #### Context
 - A [weekly menu](https://www.hellofresh.com/plans/) contains a set of [recipies](https://www.hellofresh.com/recipes/). Each week different set of recipies are selected. See example [menu for this week](https://www.hellofresh.com/plans/).
-- A [recipe](https://www.hellofresh.com.au/recipes/beef-veggie-ragu-spaghetti-5fa9c324cb8f8c0b3a183d01) contains ingredients, step-by-step instructions, nutirtional information, classification, and other metadata. See examples recipes here [1](https://www.hellofresh.com.au/recipes/southeast-asian-chicken-coconut-soup-5fa9c26209c8db59115d3f4f), [2](https://www.hellofresh.com.au/recipes/saucy-coconut-chicken-noodles-5f9b3c7198ecf4455b27d94d), [3](https://www.hellofresh.com.au/recipes/dukkah-roasted-sweet-potato-5f9b43847aacaa50f037d858).
+- A [recipe](https://www.hellofresh.com/recipes/peppercorn-steak-w06-5857fcd16121bb11c124f383) contains ingredients, step-by-step instructions, nutirtional information, classification, and other metadata. See examples recipes here [1](https://www.hellofresh.com/recipes/uk-balsamic-streak-with-red-cabb-5841a8ad9df18165854cdd72), [2](https://www.hellofresh.com/recipes/de-mozzarella-crusted-chicken-w0-5845b27b2e69d7646110f1c2), [3](https://www.hellofresh.com/recipes/uk-stir-fried-chinese-beef-5845b40b2e69d7259304d962).
 - A customer can review weekly menu as well as recipe by assigning ratings and/or adding comments.
 
 #### Tasks
