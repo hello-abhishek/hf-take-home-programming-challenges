@@ -40,8 +40,6 @@ ENV PYTHONPATH="${PYTHONPATH}:$AIRFLOW_HOME" \
 
 # copy necessary files to container
 COPY dags $AIRFLOW_HOME/dags
-RUN mkdir $AIRFLOW_HOME/dags/output
-COPY dags/job/output $AIRFLOW_HOME/dags/output
 COPY ["wait_for_db.py", "requirements.txt", "Makefile", "$AIRFLOW_HOME/"]
 
 WORKDIR $AIRFLOW_HOME

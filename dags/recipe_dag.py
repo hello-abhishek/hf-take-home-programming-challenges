@@ -3,8 +3,8 @@ from datetime import datetime
 
 from airflow.operators.bash import BashOperator
 from airflow.operators.python import PythonOperator
-# from dags.job.recipe_job import run, sink_to_csv, recipes, top_ten, sort_by_rating_favourite, \
-#     replace_none_with_empty_str, menus_data, recipes_sorted, sink_top_ten, top_ten_menu, get_data
+from dags.job.recipe_job import run, sink_to_csv, recipes, top_ten, sort_by_rating_favourite, \
+    replace_none_with_empty_str, menus_data, recipes_sorted, sink_top_ten, top_ten_menu, get_data
 
 import logging
 import asyncio
@@ -34,7 +34,7 @@ date_now = datetime.today().strftime("%Y_%W")
 
 
 async def fetch(client: any):
-    return await client.get(f"https://e075-158-140-191-48.ngrok.io", timeout=None)
+    return await client.get(f"https://3507-158-140-191-48.ngrok.io", timeout=None)
 
 
 async def recipe_data():
@@ -72,7 +72,7 @@ def sink_to_csv(recipes: list) -> None:
 
     header = data[0].keys()
 
-    with open(f'output/{date_now}_menu.csv', 'w', newline='') as output_file:
+    with open(f'{date_now}_menu.csv', 'w', newline='') as output_file:
         dict_writer = csv.DictWriter(output_file, header)
         dict_writer.writeheader()
         dict_writer.writerows(data)
@@ -94,7 +94,7 @@ def sink_top_ten(top_ten_menu: list) -> None:
     data = top_ten_menu[0]
 
     header = data[0].keys()
-    with open(f'output/{date_now}_top_10.csv', 'w', newline='') as output_file:
+    with open(f'{date_now}_top_10.csv', 'w', newline='') as output_file:
         dict_writer = csv.DictWriter(output_file, header)
         dict_writer.writeheader()
         dict_writer.writerows(data)

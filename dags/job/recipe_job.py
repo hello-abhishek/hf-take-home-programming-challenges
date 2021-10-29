@@ -21,7 +21,7 @@ date_now = datetime.today().strftime("%Y_%W")
 
 
 async def fetch(client: any):
-    return await client.get(f"https://e075-158-140-191-48.ngrok.io", timeout=None)
+    return await client.get(f"https://623c-158-140-191-48.ngrok.io", timeout=None)
 
 
 async def recipe_data():
@@ -43,7 +43,7 @@ def run_async_task(c, coro=None):
     return results
 
 def get_data():
-    r = requests.get("http://localhost:3000")
+    r = requests.get("https://623c-158-140-191-48.ngrok.io")
     return r.json
 
 
@@ -56,7 +56,6 @@ def extract_data(response: list) -> list:
         except Exception as e:
             logger.error("cannot get the response")
             raise e
-        return recipes
 
 
 def sink_to_csv(recipes: list) -> None:
@@ -64,7 +63,7 @@ def sink_to_csv(recipes: list) -> None:
 
     header = data[0].keys()
 
-    with open(f'output/{date_now}_menu.csv', 'w', newline='') as output_file:
+    with open(f'/airflow/dags/output/{date_now}_menu.csv', 'w', newline='') as output_file:
         dict_writer = csv.DictWriter(output_file, header)
         dict_writer.writeheader()
         dict_writer.writerows(data)
@@ -86,7 +85,7 @@ def sink_top_ten(top_ten_menu: list) -> None:
     data = top_ten_menu[0]
 
     header = data[0].keys()
-    with open(f'output/{date_now}_top_10.csv', 'w', newline='') as output_file:
+    with open(f'/airflow/dags/output/{date_now}_top_10.csv', 'w', newline='') as output_file:
         dict_writer = csv.DictWriter(output_file, header)
         dict_writer.writeheader()
         dict_writer.writerows(data)

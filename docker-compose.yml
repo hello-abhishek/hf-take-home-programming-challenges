@@ -23,7 +23,6 @@ services:
     volumes:
     # Volume to share local `dags` folder with the container, so we can make changes on the fly while developing
       - "./dags:/airflow/dags"
-      - "./dags/job/output:/airflow/dags/job/output"
   postgres:
     # for Local Executor
     image: 'postgres:13.3-alpine'
