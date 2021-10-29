@@ -1,5 +1,12 @@
 SHELL=/bin/bash
 
+help:
+	@echo  'Options:'
+	@echo  '  docker-run      - Run the ETL job using docker-compose'
+	@echo  '  docker-down     - Stop ETL container'
+	@echo  '  setup           - Setup and install dependencies'
+
+
 docker-up:
 	docker-compose up -d
 
