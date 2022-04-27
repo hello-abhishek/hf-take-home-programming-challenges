@@ -24,7 +24,7 @@ Choose the one you are most familiar.
 - Python 3, Flask as web framework, PeeWee as ORM, Docker as Container, PostgreSQL as a database, Pytest for unit test, Postman for API test
 - Python 3, Flask as web framework, Flask-PyMongo as ORM, Docker as Container, MongoDB as a database, Pytest for unit test, Postman for API test
 - Go, chi or beego as web framework, sqlx or beego as ORM, Docker as Container, PostgreSQL as a database, go testing package, Postman for API test
-- PHP, Laravel as web framework, PostgreSQL as a database
+- PHP, Laravel as web framework, Docker as Container, PostgreSQL as a database, Postman for API test
 
 ## Frontend Focused
 
