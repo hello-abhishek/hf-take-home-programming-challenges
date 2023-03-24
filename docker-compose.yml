@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+  airflow:
+    container_name: 'airflow'
+    image: 'airflow'
+    ports:
+      - '8080:8080'
+    build:
+      context: data-eng
+      dockerfile: 'Dockerfile'
+      args:
+        # Variables should be in a local .env file which is git ignored
+        - AIRFLOW_DB_LISTENADDR=${AIRFLOW_DB_LISTENADDR}
+        - AIRFLOW_DB_PORT=${AIRFLOW_DB_PORT}
+        - AIRFLOW_DB_USER=${AIRFLOW_DB_USER}
+        - AIRFLOW_DB_PASSWORD=${AIRFLOW_DB_PASSWORD}
+        - AIRFLOW_DB_NAME=${AIRFLOW_DB_NAME}
+        - AIRFLOW_ENCRYPTION_FERNET_KEY=${AIRFLOW_ENCRYPTION_FERNET_KEY}
+        - AIRFLOW_ADMIN_USER=${AIRFLOW_ADMIN_USER}
+        - AIRFLOW_ADMIN_PASSWORD=${AIRFLOW_ADMIN_PASSWORD}
+
+    volumes:
+    # Volume to share local `dags` folder with the container, so we can make changes on the fly while developing
+      - "./dags:/airflow/dags"
+  postgres:
+    # for Local Executor
+    image: 'postgres:13.3-alpine'
+    container_name: 'airflow_db'
+    ports:
+      - '15432:5432'
+    environment:
+      - POSTGRES_USER=${AIRFLOW_DB_USER}
+      - POSTGRES_PASSWORD=${AIRFLOW_DB_PASSWORD}
+      - POSTGRES_LISTENPORT=${AIRFLOW_DB_PORT}
+      - POSTGRES_DB=${AIRFLOW_DB_NAME}
